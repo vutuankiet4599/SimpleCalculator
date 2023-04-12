@@ -1,15 +1,15 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import App from "../components/App";
 import NoPage from "../components/NoPage";
 const MyRouter = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<App />} />
-                <Route path="*" element={<NoPage />} />
-            </Routes>
-        </BrowserRouter>
-    )
-}
+  return (
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="*" element={<NoPage />} />
+      </Routes>
+    </HashRouter>
+  );
+};
 
 export default MyRouter;
