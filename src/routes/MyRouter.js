@@ -6,7 +6,7 @@ const MyRouter = () => {
     <HashRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="*" element={<NoPage />} />
+        {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
     </HashRouter>
   );
